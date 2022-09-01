@@ -39,6 +39,6 @@ constructor(uint8 _maxWhitelistedAddresses) {
         numAddressesWhitelisted += 1;
     }
 }
-// 0x6406d1B436C04102b7367072c84A14C1f70Ed359
+// 0xE8a0B7fCC728a7Df7b18FcD198660174B15D8a0C
 
 
