@@ -1,16 +1,16 @@
-require('@nomicfoundation/hardhat-toolbox')
-require('dotenv').config({ path: '.env' })
+require("@nomicfoundation/hardhat-toolbox");
+require("dotenv").config({ path: ".env" });
 
-const ALCHEMY_API_KEY_URL = process.env.ALCHEMY_API_KEY_URL
-const GOERLI_PRIVATE_KEY = process.env.GOERLI_PRIVATE_KEY
+const QUICKNODE_HTTP_URL = process.env.QUICKNODE_HTTP_URL;
+const GOERLI_PRIVATE_KEY = process.env.GOERLI_PRIVATE_KEY;
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: '0.8.9',
+  solidity: "0.8.9",
   networks: {
     goerli: {
-      url: ALCHEMY_API_KEY_URL,
-      accounts: [GOERLI_PRIVATE_KEY],
-    },
-  },
-}
+      url: QUICKNODE_HTTP_URL,
+      accounts: [GOERLI_PRIVATE_KEY]
+    }
+  }
+};
